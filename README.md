@@ -9,9 +9,12 @@ Allows you to stretch the AIF DWP to fit any screen size
    Example DWP:
    C:\Program Files\BMC Software\DWP\DWP\dwp\current\app\custom
    File: ARSystem.css
-   
-2. You must connect the script to index.html on DWP
+
+2. Specify the correct IDs SRDs in the file ResizeAIF.js in location.href
+   Example: location.hash === "#/srm/profile/SRGAA5V0HI2KVAQ36NYJQ287SGYW10/srm" || location.hash === "#/srm/profile/SRGAA5V0HI2KVAQKB75VQ9DG2J9F9H/srm"
+
+3. You must connect the script to index.html on DWP
   Example: C:\Program Files\BMC Software\DWP\DWP\dwp\current\app\index.html
   Add String in end of tag "body" <script src="custom/ResizeAIF.js"></script>
   
-3. Clear the browser cache
+4. Clear the browser cache
